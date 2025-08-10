@@ -1,0 +1,78 @@
+.flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 15px; /* Increased border-radius for rounded corners */
+    /* overflow: hidden; */
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Added black border */
+    border-radius: 15px; /* Ensured rounded corners on front and back */
+}
+
+.flip-card-front {
+    background-color: #fff; /* Set background to white */
+    color: black;
+    font-size: 1.2em; /* Adjusted font size */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Ensure no transform on the front */
+    transform: rotateY(0deg);
+}
+
+.flip-card-front h4 {
+    margin: 0; /* Remove default margin for h4 */
+    text-align: center;
+}
+
+.flip-card-back {
+    background-color: #faa61a; /* Keep background color for back */
+    color: white;
+    /* Ensure the back is rotated to be visible after the inner container flips */
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flip-card-back h4 {
+    margin-bottom: 10px;
+}
+
+.flip-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.programmes-section .section-title,
+.programmes-section .section-subtitle {
+    color: #e55d2b; /* Adjust color to match your theme */
+    margin-top: 20px;
+}

@@ -1,0 +1,128 @@
+.site-footer {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    font-family: sans-serif; /* Or a preferred font */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute sections */
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #e1532d; /* Accent color for headings */
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    line-height: 1.6;
+}
+
+.footer-section.about {
+    flex-basis: 300px; /* Adjust as needed */
+}
+
+.footer-section.links {
+    flex-basis: 600px; /* Adjust as needed */
+}
+
+.footer-logo {
+    height: 60px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.social-links a i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff; /* Set icon color */
+}
+
+.newsletter-signup {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.newsletter-signup button {
+    padding: 10px 15px;
+    background-color: #e1532d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-nav-column {
+    flex-basis: 180px; /* Adjust as needed */
+}
+
+.footer-nav-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Separator line */
+    color: #888; /* Lighter color for copyright */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section.about, .footer-section.links {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .newsletter-signup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-signup input[type="email"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 80%; /* Adjust as needed */
+    }
+}

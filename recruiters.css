@@ -1,0 +1,29 @@
+.recruiter-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.recruiter-carousel:hover .recruiter-logo-wrapper {
+  animation-play-state: paused;
+}
+
+.recruiter-logo-wrapper {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.recruiter-logo {
+  flex: 0 0 auto; /* Prevent shrinking */
+  margin-right: 20px; /* Space between logos */
+}
+
+.recruiter-logo img {
+  height: 50px; /* Adjust height as needed */
+  width: auto;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

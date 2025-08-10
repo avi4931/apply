@@ -1,0 +1,162 @@
+.banner-static {
+    background: linear-gradient(to right, #e1532d, #ff8f6e);
+    /* Using a gradient from the original palette with more appeal */
+    /* color: #fff; White text for better contrast */
+    padding: 60px 0;
+    /* Increased padding */
+    text-align: center;
+    /* Center text */
+}
+
+.banner-static h2,
+.banner-static p {
+    color: #fff;
+    White text for better contrast
+}
+
+.iti {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner-static .slide-content {
+    display: flex
+;
+    align-items: flex-start;
+    gap: 260px;
+    flex-direction: row;
+    justify-content: center;
+    /* align-content: flex-end; */
+    flex-wrap: nowrap;
+}
+
+.apply-steps {
+    /* Allow flex items to grow and shrink */
+    min-width: 600px;
+    /* Minimum width for flex items */
+}
+
+.application-form {
+    min-width: 300px;
+}
+
+.apply-steps h2,
+.application-form h2 {
+    text-align: center;
+    /* Center headings */
+    margin-bottom: 30px;
+    /* Add space below headings */
+    font-size: 2em;
+    /* Larger font size for headings */
+}
+
+.apply-steps .step:nth-child(2) {
+    margin-top: 63px;
+}
+
+.apply-steps .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Increased bottom margin */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Slightly transparent white background */
+    padding: 10px;
+    /* Add padding to steps */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+
+.apply-steps .step i {
+    font-size: 30px;
+    /* Larger icons */
+    margin-right: 20px;
+    /* Increased right margin */
+    color: #fff;
+    /* White icons */
+}
+
+.apply-steps .step p {
+    margin: 0;
+    /* Remove default paragraph margin */
+    font-size: 1.1em;
+    /* Slightly larger text */
+}
+
+.application-form form input,
+.application-form form select {
+    width: 100%;
+    padding: 5px;
+    /* Increased padding */
+    margin-bottom: 20px;
+    /* Increased bottom margin */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white background */
+    color: #333;
+    /* Dark text color */
+}
+
+.application-form form .consent {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.application-form form .consent input {
+    width: unset;
+    margin-bottom: 22px;
+    margin-right: 30px;
+}
+
+.application-form form button {
+    background-color: #e1532d;
+    /* Using the accent color for the button */
+    color: #fff;
+    padding: 4px 0px;
+    /* Increased padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    /* Slightly larger font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.application-form form button:hover {
+    background-color: #c04525;
+    /* Darker shade of accent color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-static .slide-content {
+        flex-direction: column;
+        gap: 20px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .apply-steps,
+    .application-form {
+        min-width: unset;
+        /* Remove minimum width */
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .apply-steps {
+        margin-bottom: 20px;
+        /* Adjust margin */
+    }
+
+    .banner-static {
+        padding: 40px 0;
+        /* Adjust padding */
+    }
+}

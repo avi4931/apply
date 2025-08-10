@@ -1,0 +1,128 @@
+.site-header {
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; /* Adjust as needed */
+    width: 90%;
+    align-items: flex-end; /* Right align items */
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    width: 112%; /* Take full width */
+    justify-content: space-between; /* Space out logo and title */
+}
+
+.site-logo {
+    
+    height: 90px; /* Adjust as needed */
+    
+}
+
+.site-title {
+    font-size: 3em; /* Adjust as needed */
+    color: #e1532d;
+    font-weight: bold;
+}
+
+.header-bottom {
+    width: 100%; /* Take full width */
+    margin-top: 10px; /* Space between top and bottom sections */
+    display: flex;
+    justify-content: flex-end; /* Right align nav links */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    font-weight: bold;
+    font-size: 1em; /* Adjust as needed */
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .header-top {
+        justify-content: space-between; /* Space out logo and hamburger */
+    }
+    
+    .site-title {
+        display: none; /* Hide title on smaller screens */
+    }
+
+    .header-bottom {
+        justify-content: center; /* Center nav links on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide menu by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center; /* Center text in stacked links */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adjust spacing for stacked links */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger on small screens */
+    }
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .hidden {
+    display: none;
+  }
+  .toggle-btn {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
